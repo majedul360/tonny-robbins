@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #15023a;
+}
+
+.header nav .nav-link {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+.header .menu {
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* media quearies */
+@media (max-width: 800px) {
+  .header .menu {
+    display: block;
+  }
+
+  .header nav {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.2s linear;
+  }
+
+  .header nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header nav .nav-link {
+    color: black;
+    display: block;
+    text-align: center;
+  }
+}
