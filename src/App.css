@@ -6,6 +6,9 @@
   padding: 5rem 9%;
 }
 
+.app .pages .home {
+  padding: 0;
+}
 /* media quearies */
 @media (max-width: 1024px) {
   .app .header {
@@ -14,6 +17,10 @@
 
   .app .pages > * {
     padding: 5rem 5%;
+  }
+
+  .app .pages .home {
+    padding: 0;
   }
 }
 
@@ -25,6 +32,10 @@
   .app .pages > * {
     padding: 5rem 3rem;
   }
+
+  .app .pages .home {
+    padding: 0;
+  }
 }
 
 @media (max-width: 450px) {
@@ -34,5 +45,9 @@
 
   .app .pages > * {
     padding: 5rem 2rem;
+  }
+
+  .app .pages .home {
+    padding: 0;
   }
 }

@@ -1,0 +1,25 @@
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../../public/images/banner.png) no-repeat right center;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner .sub-title,
+.title {
+  color: white;
+}
+
+.banner .sub-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner .title {
+  font-size: 6vw;
+}
