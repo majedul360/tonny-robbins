@@ -7,15 +7,24 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="header">
+      <span className="name">tony robbins</span>
       <nav className={`${isMenuOpen && "active"}`}>
-        <Link className="nav-link" to="/">
+        <Link className="nav-link" to="/" onClick={() => setIsMenuOpen(false)}>
           Home
         </Link>
-        <Link className="nav-link" to="/about">
+        <Link
+          className="nav-link"
+          to="/about"
+          onClick={() => setIsMenuOpen(false)}
+        >
           About
         </Link>
-        <Link className="nav-link" to="/contact">
-          Contact
+        <Link
+          className="nav-link"
+          to="/blogs"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Blogs
         </Link>
       </nav>
       <FontAwesomeIcon

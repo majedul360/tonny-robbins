@@ -1,20 +1,31 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #15023a;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.header .name {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.header nav {
+  margin-left: auto;
 }
 
 .header nav .nav-link {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-left: 2rem;
-  color: white;
+  color: #000000;
 }
 
 .header .menu {
-  color: white;
   font-size: 2.5rem;
   cursor: pointer;
+  margin-left: auto;
   display: none;
 }
 
@@ -26,9 +37,10 @@
 
   .header nav {
     position: absolute;
-    top: 15%;
+    top: 99%;
     left: 0;
     right: 0;
+    background: white;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: all 0.2s linear;
   }
@@ -39,7 +51,8 @@
 
   .header nav .nav-link {
     color: black;
-    display: block;
     text-align: center;
+    margin: 1rem 0;
+    display: block;
   }
 }
