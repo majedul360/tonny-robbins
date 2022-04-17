@@ -26,6 +26,20 @@ const Header = () => {
         >
           Blogs
         </Link>
+        <Link
+          className="nav-link"
+          to="/registar"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Registar
+        </Link>
+        <Link
+          className="nav-link"
+          to="/login"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          Login
+        </Link>
       </nav>
       <FontAwesomeIcon
         onClick={() => setIsMenuOpen(!isMenuOpen)}
