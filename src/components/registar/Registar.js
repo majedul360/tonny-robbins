@@ -4,6 +4,7 @@ import Sociallogin from "../socialLogin/SocialLogin";
 import "./Registar.css";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase/Firebase.int";
+import { useUpdateProfile } from "react-firebase-hooks/auth";
 
 const Registar = () => {
   const [name, setName] = useState("");
@@ -11,13 +12,17 @@ const Registar = () => {
   const [password, setPassword] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-  const formHandler = (e) => {
+  const [updateProfile] = useUpdateProfile(auth);
+
+  const formHandler = async (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(email, password);
+    await createUserWithEmailAndPassword(email, password);
+    await updateProfile({ displayName: name });
     setName("");
     setEmail("");
     setPassword("");
   };
+
   return (
     <div className="auth-container">
       <div>

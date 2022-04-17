@@ -1,0 +1,73 @@
+.book-now {
+  background: #14aecf;
+}
+
+.book-now .form-container {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+.book-now .form-container h2 {
+  font-size: 6rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.book-now .form-container .input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.book-now .form-container .input-container input {
+  flex: 1 1 40rem;
+  background: none;
+  border-bottom: 0.2rem solid white;
+  padding-bottom: 1rem;
+  text-transform: none;
+}
+
+.book-now .form-container input::placeholder {
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.book-now .form-container input:focus {
+  color: white;
+}
+
+.book-now .form-container .country {
+  margin: 2rem 0;
+  background: none;
+  width: 100%;
+  border-bottom: 0.2rem solid white;
+  padding-bottom: 2rem;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.book-now .form-container .country option {
+  background: black;
+}
+
+.book-now .form-container p {
+  font-size: 1.7rem;
+  color: white;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.book-now .form-container .btn-container {
+  text-align: center;
+}
+
+.book-now .form-container .btn-container button {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: white;
+  cursor: pointer;
+}

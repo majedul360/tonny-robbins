@@ -6,13 +6,14 @@ import auth from "../firebase/Firebase.int";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
-  const [sendPasswordResetEmail, sending, error2] =
-    useSendPasswordResetEmail(auth);
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
   const formHandler = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(email, password);
@@ -27,7 +28,6 @@ const Login = () => {
   };
 
   const notify = () => toast("Please Check Your Email !");
-
   return (
     <div className="auth-container">
       <div>
