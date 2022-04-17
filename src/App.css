@@ -9,6 +9,10 @@
 .app .pages .home {
   padding: 0;
 }
+
+.app .footer {
+  padding: 5rem 9%;
+}
 /* media quearies */
 @media (max-width: 1024px) {
   .app .header {
@@ -21,6 +25,10 @@
 
   .app .pages .home {
     padding: 0;
+  }
+
+  .app .footer {
+    padding: 5rem 5%;
   }
 }
 
@@ -36,6 +44,10 @@
   .app .pages .home {
     padding: 0;
   }
+
+  .app .footer {
+    padding: 5rem 3rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -49,5 +61,9 @@
 
   .app .pages .home {
     padding: 0;
+  }
+
+  .app .footer {
+    padding: 5rem 2rem;
   }
 }

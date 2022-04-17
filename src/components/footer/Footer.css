@@ -1,0 +1,61 @@
+.footer {
+  background: #000;
+}
+
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem;
+}
+
+.footer .footer-container .box h6 {
+  font-size: 1.7rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container p,
+span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer .footer-container p {
+  text-transform: none;
+}
+
+.footer .footer-container span {
+  display: block;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.footer .footer-container span:hover {
+  color: #14aecf;
+}
+
+.footer .footer-container .box:nth-child(2) {
+  padding: 0 0 0 8rem;
+}
+
+.footer .footer-container .box:nth-child(3) {
+  padding: 0 3rem;
+}
+
+.footer .footer-container .box .icons .icon {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.footer hr {
+  border-bottom: 0.1rem solid white;
+  margin: 2.5rem 0;
+}
+
+.footer .credits {
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+}

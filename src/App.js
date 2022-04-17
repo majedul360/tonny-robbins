@@ -6,6 +6,7 @@ import About from "./components/about/About";
 import Blogs from "./components/blogs/Blogs";
 import Registar from "./components/registar/Registar";
 import Login from "./components/login/Login";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="app">
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </div>
+      <Footer className="footer" />
     </div>
   );
 }
