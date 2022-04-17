@@ -1,0 +1,33 @@
+.service {
+  padding: 2rem 0;
+}
+
+.service img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.service .name {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.service .price {
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1.7rem;
+  text-transform: none;
+  line-height: 3rem;
+  margin: 1rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  background: #14aecf;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}

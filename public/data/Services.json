@@ -3,14 +3,14 @@
     "id": 1,
     "img": "images/member-ship-programm.jpg",
     "name": "platinum partnership",
-    "price": "$100000",
+    "price": "$10000",
     "desc": "As a Tony Robbins Platinum Partnership member you’ll receive exclusive invitations to up to three incredible adventures per year. Tony and Sage Robbins join the Platinum Partners on selected trips as they learn, network, and play in such diverse situations"
   },
   {
     "id": 2,
     "img": "images/shutterstock.jpg",
     "name": "private coaching",
-    "price": "$100000",
+    "price": "$150000",
     "desc": "An elite Tony Robbins Results Coach will help take your life to the next level using methods that Tony himself has developed and perfected over 40+ years, working with millions of people around the world including world champion athletes, billionaires and politicians."
   },
   {
@@ -24,12 +24,12 @@
     "id": 4,
     "img": "images/shutterstock2.jpg",
     "name": "supplements",
-    "price": "$100000",
+    "price": "$120000",
     "desc": "Health is important to you – that’s why you make sure to eat well and maintain an active lifestyle. Even though you try your best to take in all the nutrients you need, you sometimes feel like you’re coming up short, or would like an extra boost when it comes to achieving your health goals."
   },
   {
     "id": 5,
-    "img": "images/facebook.jpg",
+    "img": "images/facebook.png",
     "name": "join the inner circle",
     "price": "$100000",
     "desc": "You can't go to the gym once and expect to have six pack abs. You can't study a language once and speak it fluently... The same applies for success in any area of life. Picture what your life looks like 1 month, 6 months, 1 year from now if you commit to being trained on a consistent basis by Tony Robbins."
@@ -38,7 +38,7 @@
     "id": 6,
     "img": "images/trainingprograms.jpg",
     "name": "training programs",
-    "price": "$100000",
+    "price": "$110000",
     "desc": "The Training Never Stops Boost your health. Improve your relationships. Supercharge your career with savings on select products on our fully redesigned Breakthrough app + in CD/DVD format."
   }
 ]
