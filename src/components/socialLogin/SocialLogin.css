@@ -1,0 +1,52 @@
+.social-login .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid #000;
+  border-radius: 5rem;
+  padding: 1rem 0;
+  margin: 0 3rem;
+  cursor: pointer;
+}
+
+.social-login .login img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.social-login .login span {
+  font-size: 2rem;
+  color: black;
+}
+
+.social-login .or {
+  margin: 2rem 7rem;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.social-login .or::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0.2rem;
+  background: #000;
+  z-index: -1;
+}
+
+.social-login .or span {
+  color: #000;
+  background: white;
+  padding: 0 2rem;
+}
+
+.error {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}

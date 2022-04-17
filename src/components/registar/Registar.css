@@ -1,0 +1,44 @@
+.auth-container {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container .form-container {
+  max-width: 50rem;
+  background-color: #14aecf;
+  padding: 2rem;
+}
+
+.auth-container .form-container h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.auth-container .form-container form input {
+  width: 100%;
+  border: 0.1rem solid black;
+  padding: 1.2rem 1.4rem;
+  margin: 1rem 0;
+  text-transform: none;
+}
+
+.auth-container .form-container form input::placeholder {
+  text-transform: capitalize;
+}
+
+.auth-container .form-container form .btn {
+  background-color: #000;
+  text-transform: capitalize;
+}
+
+.auth-container .form-container p {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.auth-container .form-container p .link {
+  color: #000;
+}

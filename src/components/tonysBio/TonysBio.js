@@ -14,9 +14,8 @@ const Tonysbio = () => {
         <iframe
           src="https://www.youtube.com/embed/hfNOXhDpXOk"
           title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture "
+          allowFullScreen
         ></iframe>
         <div className="content">
           <h3>FIND THE EVENT THAT’S RIGHT FOR YOU</h3>

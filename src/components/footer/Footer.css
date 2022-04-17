@@ -49,6 +49,10 @@ span {
   cursor: pointer;
 }
 
+.footer .footer-container .box .icons .icon:hover {
+  color: #14aecf;
+}
+
 .footer hr {
   border-bottom: 0.1rem solid white;
   margin: 2.5rem 0;
