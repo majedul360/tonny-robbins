@@ -1,0 +1,10 @@
+.blogs h3 {
+  font-size: 2.5rem;
+}
+
+.blogs p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-transform: none;
+  margin: 1.5rem 0;
+}
