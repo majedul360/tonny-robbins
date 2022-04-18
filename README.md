@@ -1,4 +1,4 @@
-Motivational speaker and Career coach[Tony-Robbins](https://tony-robbins-da9e7.web.app/login).
+Motivational speaker and Career coach[Tony-Robbins](https://tony-robbins-da9e7.web.app/).
 
 ## Bullet Points:
 
