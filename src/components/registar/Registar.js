@@ -6,7 +6,6 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase/Firebase.int";
 import { useUpdateProfile } from "react-firebase-hooks/auth";
 import Footer from "../footer/Footer";
-
 const Registar = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

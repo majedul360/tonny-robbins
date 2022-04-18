@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Sociallogin from "../socialLogin/SocialLogin";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../firebase/Firebase.int";
@@ -7,6 +7,7 @@ import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "../footer/Footer";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -14,6 +15,14 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  const [googleUser] = useAuthState(auth);
+  if (user || googleUser) {
+    navigate(from, { replace: true });
+  }
 
   const formHandler = (e) => {
     e.preventDefault();
