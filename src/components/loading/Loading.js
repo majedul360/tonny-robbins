@@ -2,8 +2,8 @@ import "./Loading.css";
 
 const Loading = () => {
   return (
-    <div>
-      <h1>loading...</h1>
+    <div className="loading">
+      <h3>loading...</h3>
     </div>
   );
 };

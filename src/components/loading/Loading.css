@@ -1,0 +1,7 @@
+.loading h3 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  font-size: 1.7rem;
+}

@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+[Tony-Robbins](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Bullet Points:
+
+- Fully responsive
+- 5 pages
+- Firebase Authentication
+- Hand writing
+- Simple design
+- Clean coding
+- Easy to customize
+
+## Creadits:
+
+- Html & Css
+- React Js
+- Font Awesome
+- Google Fonts
+- Firebase
 
 ## Available Scripts
 

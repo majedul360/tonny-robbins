@@ -6,6 +6,7 @@ import auth from "../firebase/Firebase.int";
 import { useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../footer/Footer";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -29,60 +30,63 @@ const Login = () => {
 
   const notify = () => toast("Please Check Your Email !");
   return (
-    <div className="auth-container">
-      <div>
-        <Sociallogin />
-        <div className="form-container">
-          <h3>login</h3>
-          <form onSubmit={formHandler} action="">
-            <input
-              type="email"
-              placeholder="enter your email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="enter your password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <p
-              className="error"
-              style={{
-                textAlign: "initial",
-                color: "red",
-                textAlignLast: "initial",
-              }}
-            >
-              {error?.message}
+    <>
+      <div className="auth-container">
+        <div>
+          <Sociallogin />
+          <div className="form-container">
+            <h3>login</h3>
+            <form onSubmit={formHandler} action="">
+              <input
+                type="email"
+                placeholder="enter your email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="password"
+                placeholder="enter your password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <p
+                className="error"
+                style={{
+                  textAlign: "initial",
+                  color: "red",
+                  textAlignLast: "initial",
+                }}
+              >
+                {error?.message}
+              </p>
+              <input className="btn" type="submit" value="login" />
+            </form>
+            <p>
+              new to tony robbins?{" "}
+              <Link className="link" to="/registar">
+                create account
+              </Link>
             </p>
-            <input className="btn" type="submit" value="login" />
-          </form>
-          <p>
-            new to tony robbins?{" "}
-            <Link className="link" to="/registar">
-              create account
-            </Link>
-          </p>
-          <span
-            style={{
-              color: "#000",
-              textDecoration: "underLine",
-              cursor: "pointer",
-              fontSize: "1.7rem",
-              marginTop: "1rem",
-            }}
-            onClick={resetPassword}
-          >
-            forgot password
-          </span>
-          <ToastContainer />
+            <span
+              style={{
+                color: "#000",
+                textDecoration: "underLine",
+                cursor: "pointer",
+                fontSize: "1.7rem",
+                marginTop: "1rem",
+              }}
+              onClick={resetPassword}
+            >
+              forgot password
+            </span>
+            <ToastContainer />
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
